@@ -10,26 +10,27 @@
 </head>
 <body>
     <header class="header container">
-        <nav class="header__nav">
+        <nav class="header__nav nav">
             <ul class="nav__list list">
                 <li class="nav__item">
                   <a href="" class="nav__link link">Home</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link link">About me</a>
+                  <a href="#about-me" class="nav__link link">About me</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link link">Skills</a>
+                  <a href="#skills" class="nav__link link">Skills</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link link">Portfolio</a>
+                  <a href="#portfolio" class="nav__link link">Portfolio</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link link">Contacts</a>
+                  <a href="#contacts" class="nav__link link">Contacts</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main class="main">
       <section class="content container">
         <div class="content-wrapper">
@@ -42,15 +43,19 @@
 
       <section class="about">
         <div class="container">
-          <h2 class="about__title title">About me</h2>
+          <a name="about-me">
+            <h2 class="about__title title">About me</h2>
+          </a>
           <ul class="about__list list">
             <li class="about__item">
-              Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+              Hi, I'm Denis – UX/UI designer from Minsk.
+              <br>
+              I'm interested in design and everything connected with it.
             </li>
             <li class="about__item">
               I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
             </li>
-            <li class="about__item about__item_last">
+            <li class="about__item about__item--last">
               Ready to implement excellent projects with wonderful people.
             </li>
           </ul>
@@ -58,7 +63,9 @@
       </section>
 
       <section class="skills container">
-        <h2 class="skills__title title">Skills</h2>
+        <a name="skills">
+          <h2 class="skills__title title">Skills</h2>
+        </a>
         <p class="skills__subtitle">
           I work in such programs as
         </p>
@@ -98,7 +105,7 @@
           </li>
           <li class="skill__item">
             <img class="skill__item-pic" src="img/icons/Figma.svg" alt="">
-            <p class="skills__item-text">Figma</p>
+            <p class="skills__item-text skills__item-text--figma">Figma</p>
             <div class="skills__item-rating">
               <img src="img/icons/Star.svg" alt="Рейтинг 4 из 5">
               <img src="img/icons/Star.svg" alt="">
@@ -109,6 +116,67 @@
           </li>
         </ul>
       </section>
+
+      <section class="portfolio">
+        <div class="container">
+          <a name="portfolio">
+            <h2 class="portfolio__title title">Portfolio</h2>
+          </a>
+          <ul class="portfolio__list list">
+            <li class="portfolio__item">
+              <img class="portfolio__pic" src="img/fashion.jpg" alt="">
+              <a href="" class="portfolio__link link">Online fashion store - Homepage</a>
+            </li>
+            <li class="portfolio__item">
+              <img class="portfolio__pic" src="img/reebok.jpg" alt="">
+              <a href="" class="portfolio__link link">Reebok Store - Concept</a>
+            </li>
+            <li class="portfolio__item portfolio__item--last-item">
+              <img class="portfolio__pic" src="img/braun.jpg" alt="" >
+              <a href="" class="portfolio__link link">Braun Landing Page - Concept</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+
+    <foteer class="footer">
+      <div class="contacts container">
+        <a name="contacts">
+          <h2 class="contacts__title title">Contacts</h2>
+        </a>
+        <p class="contacts__subtitle">
+          Want to know more or just chat? You are welcome!
+        </p>
+        <button class="contacts__button">Send message</button>
+        <ul class="contacts-social__list list">
+          <li class="contacts-social__item">
+            <a class="contacts-social__link" href="">
+              <img class="contacts-social__pic" src="img/social/1.svg" alt="">
+            </a>
+          </li>
+          <li class="contacts-social__item">
+            <a class="contacts-social__link" href="">
+              <img class="contacts-social__pic" src="img/social/2.svg" alt="">
+            </a>
+          </li>
+          <li class="contacts-social__item">
+            <a class="contacts-social__link" href="">
+              <img class="contacts-social__pic" src="img/social/3.svg" alt="">
+            </a>
+          </li>
+          <li class="contacts-social__item">
+            <a class="contacts-social__link" href="">
+              <img class="contacts-social__pic" src="img/social/4.svg" alt="">
+            </a>
+          </li>
+        </ul>
+        <p class="contacts__text">
+          Like me on 
+          <br>
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
+    </foteer>
 </body>
 </html>
