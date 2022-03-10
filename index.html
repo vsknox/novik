@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header container">
+    <header class="header">
+      <div class="container">
         <nav class="header__nav nav">
             <ul class="nav__list list">
                 <li class="nav__item">
@@ -27,45 +28,51 @@
                 <li class="nav__item">
                   <a href="#contacts" class="nav__link link">Contacts</a>
                 </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link link">Contacts</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link link">Contacts</a>
+                </li>
             </ul>
         </nav>
+      </div>
     </header>
 
     <main class="main">
-      <section class="content container">
+      <section class="content">
+        <div class="container">
         <div class="content-wrapper">
           <h1 class="content-wrapper__name">Denis <br> Novik</h1>
           <p class="content-wrapper__text">UX | UI designer <br> 24 years old, Minsk</p>
           <p class="content-wrapper__lang"><span>RU</span> | ENG</p>
         </div>
         <img class="content__img" src="img/content-img.jpg" alt="">
-      </section>
-
-      <section class="about">
-        <div class="container">
-          <a name="about-me">
-            <h2 class="about__title title">About me</h2>
-          </a>
-          <ul class="about__list list">
-            <li class="about__item">
-              Hi, I'm Denis – UX/UI designer from Minsk.
-              <br>
-              I'm interested in design and everything connected with it.
-            </li>
-            <li class="about__item">
-              I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
-            </li>
-            <li class="about__item about__item--last">
-              Ready to implement excellent projects with wonderful people.
-            </li>
-          </ul>
         </div>
       </section>
 
-      <section class="skills container">
-        <a name="skills">
-          <h2 class="skills__title title">Skills</h2>
-        </a>
+      <section class="about" id="about-me">
+        <div class="container">
+          <h2 class="about__title title">About me</h2>
+          <div class="about__wrapper">
+            <p class="about__text">
+              Hi, I'm Denis – UX/UI designer from Minsk.
+              <br>
+              I'm interested in design and everything connected with it.
+            </p>
+            <p class="about__text">
+              I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+            </p>
+            <p class="about__text about__text--last">
+              Ready to implement excellent projects with wonderful people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="container">
+        <h2 class="skills__title title">Skills</h2>
         <p class="skills__subtitle">
           I work in such programs as
         </p>
@@ -115,13 +122,12 @@
             </div>
           </li>
         </ul>
+      </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
-          <a name="portfolio">
-            <h2 class="portfolio__title title">Portfolio</h2>
-          </a>
+          <h2 class="portfolio__title title">Portfolio</h2>
           <ul class="portfolio__list list">
             <li class="portfolio__item">
               <img class="portfolio__pic" src="img/fashion.jpg" alt="">
@@ -140,11 +146,10 @@
       </section>
     </main>
 
-    <foteer class="footer">
-      <div class="contacts container">
-        <a name="contacts">
-          <h2 class="contacts__title title">Contacts</h2>
-        </a>
+    <footer class="footer">
+    <div class="container">
+      <div class="contacts" id="contacts">
+        <h2 class="contacts__title title">Contacts</h2>
         <p class="contacts__subtitle">
           Want to know more or just chat? You are welcome!
         </p>
@@ -177,6 +182,7 @@
           LinkedIn, Instagram, Behance, Dribble
         </p>
       </div>
-    </foteer>
+    </div>
+    </footer>
 </body>
 </html>
